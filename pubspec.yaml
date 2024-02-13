@@ -40,7 +40,7 @@ flutter:
     - assets/
 
   #-- local fonts --#
-  fonts:
-    - family: Poppins
-      fonts:
-        - asset: assets/fonts/
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/
