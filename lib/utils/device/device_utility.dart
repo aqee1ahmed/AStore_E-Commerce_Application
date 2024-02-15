@@ -29,6 +29,10 @@ class AStoreDeviceUtils {
     return viewInsets.bottom != 0;
   }
 
+  static double getAppBarHeight() {
+    return AppBar().preferredSize.height;
+  }
+
   static void setFullScreen(bool enable) {
     SystemChrome.setEnabledSystemUIMode(
       enable ? SystemUiMode.immersiveSticky : SystemUiMode.edgeToEdge,
