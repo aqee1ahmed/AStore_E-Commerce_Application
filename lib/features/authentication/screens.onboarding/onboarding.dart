@@ -1,28 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/features/authentication/controllers/onboarding_controller.dart';
 import 'package:flutter_application/features/authentication/screens.onboarding/widgets/onboarding_dot__navigation.dart';
 import 'package:flutter_application/features/authentication/screens.onboarding/widgets/onboarding_next_button.dart';
 import 'package:flutter_application/features/authentication/screens.onboarding/widgets/onboarding_page.dart';
 import 'package:flutter_application/features/authentication/screens.onboarding/widgets/onboarding_skip.dart';
-import 'package:flutter_application/utils/constants/colors.dart';
 import 'package:flutter_application/utils/constants/image_strings.dart';
-import 'package:flutter_application/utils/constants/size.dart';
 import 'package:flutter_application/utils/constants/text_strings.dart';
-import 'package:flutter_application/utils/device/device_utility.dart';
-import 'package:flutter_application/utils/helpers/helper_functions.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnBoardingController());
     return Scaffold(
       body: Stack(
         children: [
           //horizontal pages
           PageView(
+            controller: controller.pageController,
+            onPageChanged: (index) {
+              controller.updatePageIndicator(index);
+            },
             children: const [
               OnBoardingPage(
                 image: AStoreAppImageStrings.onBoarding1,
