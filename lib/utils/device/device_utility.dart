@@ -55,7 +55,7 @@ class AStoreDeviceUtils {
     return MediaQuery.of(context).padding.top;
   }
 
-  static double getBottomBarHeight(BuildContext context) {
+  static double getBottomNavigationBarHeight() {
     return kBottomNavigationBarHeight;
   }
 
