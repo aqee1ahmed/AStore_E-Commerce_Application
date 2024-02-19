@@ -1,19 +1,12 @@
 class AStoreAppSize {
   AStoreAppSize._();
 
-  ///margin size
-  static const double marginExtraSmall = 4.0;
-  static const double marginSmall = 8.0;
-  static const double marginMedium = 16.0;
-  static const double marginLarge = 24.0;
-  static const double marginExtraLarge = 32.0;
-
-  ///padding size
-  static const double paddingExtraSmall = 4.0;
-  static const double paddingSmall = 8.0;
-  static const double paddingMedium = 16.0;
-  static const double paddingLarge = 24.0;
-  static const double paddingExtraLarge = 32.0;
+  ///margin padding size
+  static const double extraSmall = 4.0;
+  static const double small = 8.0;
+  static const double medium = 16.0;
+  static const double large = 24.0;
+  static const double extraLarge = 32.0;
 
   ///icon size
   static const double iconSizeExtraSmall = 12.0;

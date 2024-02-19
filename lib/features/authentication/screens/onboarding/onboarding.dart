@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/features/authentication/controllers/onboarding_controller.dart';
-import 'package:flutter_application/features/authentication/screens.onboarding/widgets/onboarding_dot__navigation.dart';
-import 'package:flutter_application/features/authentication/screens.onboarding/widgets/onboarding_next_button.dart';
-import 'package:flutter_application/features/authentication/screens.onboarding/widgets/onboarding_page.dart';
-import 'package:flutter_application/features/authentication/screens.onboarding/widgets/onboarding_skip.dart';
+import 'package:flutter_application/features/authentication/screens/onboarding/widgets/onboarding_dot__navigation.dart';
+import 'package:flutter_application/features/authentication/screens/onboarding/widgets/onboarding_next_button.dart';
+import 'package:flutter_application/features/authentication/screens/onboarding/widgets/onboarding_page.dart';
+import 'package:flutter_application/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
 import 'package:flutter_application/utils/constants/image_strings.dart';
 import 'package:flutter_application/utils/constants/text_strings.dart';
 import 'package:get/get.dart';
