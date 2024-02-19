@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/utils/constants/colors.dart';
+import 'package:flutter_application/utils/constants/size.dart';
 
 class AStoreElevatedButtonTheme {
   AStoreElevatedButtonTheme._();
@@ -7,22 +9,18 @@ class AStoreElevatedButtonTheme {
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
-      disabledBackgroundColor: Colors.grey,
-      disabledForegroundColor: Colors.grey,
-      side: const BorderSide(
-        color: Colors.blue,
-      ),
-      padding: const EdgeInsets.symmetric(vertical: 18),
+      foregroundColor: AStoreAppColors.backgroundLight,
+      backgroundColor: AStoreAppColors.primary,
+      disabledForegroundColor: AStoreAppColors.colorDarkGrey,
+      disabledBackgroundColor: AStoreAppColors.buttonDisabled,
+      side: const BorderSide(color: AStoreAppColors.primary),
+      padding: const EdgeInsets.symmetric(vertical: AStoreAppSize.buttonHeight),
       textStyle: const TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.w600,
-        color: Colors.white,
-      ),
+          fontSize: 16,
+          color: AStoreAppColors.textWhite,
+          fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
+          borderRadius: BorderRadius.circular(AStoreAppSize.buttonRadius)),
     ),
   );
 
@@ -30,22 +28,18 @@ class AStoreElevatedButtonTheme {
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
-      disabledBackgroundColor: Colors.grey,
-      disabledForegroundColor: Colors.grey,
-      side: const BorderSide(
-        color: Colors.blue,
-      ),
-      padding: const EdgeInsets.symmetric(vertical: 18),
+      foregroundColor: AStoreAppColors.backgroundLight,
+      backgroundColor: AStoreAppColors.primary,
+      disabledForegroundColor: AStoreAppColors.colorDarkGrey,
+      disabledBackgroundColor: AStoreAppColors.colorDarkerGrey,
+      side: const BorderSide(color: AStoreAppColors.primary),
+      padding: const EdgeInsets.symmetric(vertical: AStoreAppSize.buttonHeight),
       textStyle: const TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.w600,
-        color: Colors.white,
-      ),
+          fontSize: 16,
+          color: AStoreAppColors.textWhite,
+          fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
+          borderRadius: BorderRadius.circular(AStoreAppSize.buttonRadius)),
     ),
   );
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/utils/constants/colors.dart';
+import 'package:flutter_application/utils/constants/size.dart';
 
 class AStoreOutlineButtonTheme {
   AStoreOutlineButtonTheme._();
@@ -7,41 +9,32 @@ class AStoreOutlineButtonTheme {
   static final lightOutlineButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.black,
-      side: const BorderSide(color: Colors.blue),
+      foregroundColor: AStoreAppColors.backgroundDark,
+      side: const BorderSide(color: AStoreAppColors.borderPrimary),
       textStyle: const TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.w600,
-        color: Colors.black,
-      ),
+          fontSize: 16,
+          color: AStoreAppColors.colorBlack,
+          fontWeight: FontWeight.w600),
       padding: const EdgeInsets.symmetric(
-        horizontal: 16,
-        vertical: 20,
-      ),
+          vertical: AStoreAppSize.buttonHeight, horizontal: 20),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(14),
-      ),
+          borderRadius: BorderRadius.circular(AStoreAppSize.buttonRadius)),
     ),
   );
 
   ///dark outline button theme
   static final darkOutlineButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      elevation: 0,
-      foregroundColor: Colors.white,
-      side: const BorderSide(color: Colors.blue),
+      foregroundColor: AStoreAppColors.backgroundLight,
+      side: const BorderSide(color: AStoreAppColors.borderPrimary),
       textStyle: const TextStyle(
-        fontSize: 16,
-        fontWeight: FontWeight.w600,
-        color: Colors.white,
-      ),
+          fontSize: 16,
+          color: AStoreAppColors.textWhite,
+          fontWeight: FontWeight.w600),
       padding: const EdgeInsets.symmetric(
-        horizontal: 16,
-        vertical: 20,
-      ),
+          vertical: AStoreAppSize.buttonHeight, horizontal: 20),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(14),
-      ),
+          borderRadius: BorderRadius.circular(AStoreAppSize.buttonRadius)),
     ),
   );
 }
